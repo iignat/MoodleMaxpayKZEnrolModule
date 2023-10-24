@@ -1,0 +1,12 @@
+<div align="center">
+
+<p><?php print_string("paymentrequired") ?></p>
+<!-- p><b><?php echo get_string("cost").": {$instance->currency} {$localisedcost}"; ?></b></p -->
+<form action='/enrol/maxpay/enrol.php' method='POST'>
+<input type='hidden' name='course_id' value='<?php echo $course->id; ?>'>
+<input type='hidden' name='user_id' value='<?php echo $USER->id; ?>'>
+
+<p><input type='submit' value='<?php echo $instancename; ?>'></p>
+</form>
+<p><?php print_string("paymentinstant") ?></p>
+</div>
